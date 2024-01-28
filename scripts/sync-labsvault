@@ -3,7 +3,7 @@
 LOG="/var/log/sync-labsvault.log"
 DIRLOCALLABS=/opt/unetlab/labs/labsvault
 DIRREMOTELABS=EVE-NG
-URLLABS=https://github.com/pvrmza/labsvault/trunk/$DIRREMOTELABS/
+URLLABS=https://github.com/David4753/labsvault/$DIRREMOTELABS/
 
 #
 echo "iniciando..." > $LOG
