@@ -44,13 +44,13 @@ cd megatools-1.10.3
 ./configure --disable-docs && make && make install
 
 #------ sync-labsvault.sh
-wget -q https://raw.githubusercontent.com/pvrmza/labsvault/master/scripts/sync-labsvault -O /tmp/sync-labsvault
+wget -q https://raw.githubusercontent.com/David4753/labsvault/master/scripts/sync-labsvault -O /tmp/sync-labsvault
 if [ $? -eq 0 ]; then
 	cp /tmp/sync-labsvault /etc/cron.hourly/90sync-labsvault
 	chmod 755 /etc/cron.hourly/90sync-labsvault
 fi
 #------ updateimages.sh
-wget -q https://raw.githubusercontent.com/pvrmza/labsvault/master/scripts/updateimages -O /tmp/updateimages
+wget -q https://raw.githubusercontent.com/David4753/labsvault/master/scripts/updateimages -O /tmp/updateimages
 if [ $? -eq 0 ]; then
 	cp /tmp/updateimages /etc/cron.daily/91updateimages
 	chmod 755 /etc/cron.daily/91updateimages
@@ -58,7 +58,7 @@ fi
 
 
 #------ autoupdate
-wget -q https://raw.githubusercontent.com/pvrmza/labsvault/master/scripts/autoupdate -O /tmp/autoupdate
+wget -q https://raw.githubusercontent.com/David4753/labsvault/master/scripts/autoupdate -O /tmp/autoupdate
 if [ $? -eq 0 ]; then
 	cp /tmp/autoupdate /etc/cron.daily/90autoupdate
 	chmod 755 /etc/cron.daily/90autoupdate
