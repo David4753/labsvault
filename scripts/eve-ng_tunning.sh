@@ -58,11 +58,11 @@ fi
 
 
 #------ autoupdate
-#wget -q https://raw.githubusercontent.com/David4753/labsvault/master/scripts/autoupdate -O /tmp/autoupdate
-#if [ $? -eq 0 ]; then
-#	cp /tmp/autoupdate /etc/cron.daily/90autoupdate
-#	chmod 755 /etc/cron.daily/90autoupdate
-#fi
+wget -q https://raw.githubusercontent.com/David4753/labsvault/master/scripts/autoupdate -O /tmp/autoupdate
+if [ $? -eq 0 ]; then
+	cp /tmp/autoupdate /etc/cron.daily/90autoupdate
+	chmod 755 /etc/cron.daily/90autoupdate
+fi
 
 # ----- 
 cat << EOF > /etc/rc.local
